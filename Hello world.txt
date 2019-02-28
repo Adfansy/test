@@ -1,4 +1,6 @@
-print ("hello world")
-print ("привет всем")
-print ("hi")
+print ("hello world!")
+print ("привет всем!")
+print ("hi!")
+print ("hello my dear friend!")
 print ("how are you?")
+
