@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+
+var arr = []; // основной массив
+var ext = []; // дополнительный массив для хранения длины цепочки красных
+var rounds = 1000000; //количество раундов
+var count = 0;
+var max = 0;
+
+for(var i=0; i < rounds; i++) { // создаем основной массив
+	arr.push(Math.round(Math.random() * 2) - 1);
+}
+
+alert(arr); // показываем основной массив
+
+for(i=0; i < arr.length; i++) {
+	if (arr[i] == 1) {
+		count=0;
+		while (i < arr.length && arr[i] == 1) {
+			i++;
+			count++;
+		}
+		if (count > max) {max=count;
+
+		}
+	}
+}     
+
+
+alert("Самая длинная красная последовательность " + max); // показываем размер самой длинной красной последовательности
+
+</script>
